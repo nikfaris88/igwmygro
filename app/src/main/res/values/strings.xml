@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">m@MYAgro</string>
+    <string name="sessionString">mykomunitimardi</string>
+    <string name="Copyright">Copyright@2017 Ingeniworks Sdn Bhd</string>
+    <string name="pls_wait">Sila tunggu</string>
+    <string name="action_otherapps">Aplikasi berkaitan</string>
+    <string name="action_settings">Tetapan</string>
+    <string name="action_send">Hantar</string>
+    <string name="action_login">Log Masuk</string>
+    <string name="strListApps">Senarai Aplikasi</string>
+    <string name="strPhonePermissionCloudMsg">Kebenaran telefon diperlukan untuk mendaftar pada Cloud Messaging</string>
+    <string name="strPostTitle">Pengumuman Baru</string>
+    <string name="strComposeMsg">Menulis mesej</string>
+    <string name="strPublic">Umum</string>
+    <string name="strPublicDesc">Secara umum kepada pengguna aplikasi ini.</string>
+    <string name="strPrivacy">Privasi</string>
+    <string name="strSelectedUser">Kepada pengguna tertentu sahaja.</string>
+    <string name="strChooseRecipient">Sila pilih penerima</string>
+    <string name="strMyKomuniti">MyKomuniti</string>
+    <string name="strProceed">Teruskan</string>
+    <string name="strErrConnection">Tiada internet buat masa ini. Sila cuba lagi. Terima kasih.</string>
+    <string name="strErrTechnicalIssue">Masalah teknikal.Sila cuba lagi.</string>
+    <string name="feed_reply">Balas</string>
+    <string name="feed_message">Mesej</string>
+    <string name="feed_back">Kembali</string>
+    <string name="feed_back_msg">Penulisan tersebut tidak akan disimpan. Anda ingin teruskan?</string>
+    <string name="feed_title">Tajuk</string>
+    <string name="feed_description">Apa yang ingin kamu kongsikan?</string>
+    <string name="feed_add_picture">Masukkan gambar</string>
+    <string name="feed_pic_desc">Sesuatu mengenai gambar tersebut</string>
+    <string name="feed_pics_desc">Sesuatu mengenai gambar-gambar tersebut</string>
+    <string name="strNotRegister">Tidak berdaftar</string>
+    <string name="strLogIn">Log Masuk</string>
+    <string name="strNotLoggedInAlert">Sila Log Masuk untuk menggunakan pautan ini. Terima kasih.</string>
+    <string name="strNotRespond">Tiada maklumbalas buat masa ini.</string>
+    <string name="strNoAnnouncement">Tiada pengumuman buat masa ini.</string>
+    <string name="strNoMessage">Tiada mesej buat masa ini.</string>
+    <string name="strNoData">Tiada maklumat buat masa ini.</string>
+    <string name="strListProjects">Sila pilih projek</string>
+    <string name="strFeedDetails">Maklumat selanjutnya</string>
+    <string name="strResetPassword">Tukar kata laluan</string>
+    <string name="strCurrentPassword">Kata laluan semasa</string>
+    <string name="strNewPassword">Kata laluan baru</string>
+    <string name="strConfirmPassword">Sahkan kata laluan</string>
+    <string name="strSettings">Tetapan</string>
+    <string name="strAboutUs">Pengenalan Aplikasi</string>
+    <string name="strLogOut">Log Keluar</string>
+    <string name="strChange">Tukar</string>
+    <string name="strChangePassword">Tukar kata laluan</string>
+    <string name="strPassMin">Panjang kata laluan mesti melebihi 14 aksara</string>
+    <string name="strPassNotSame">Pengesahan kata laluan tidak tepat</string>
+    <string name="strPassMax">Kata laluan terlalu panjang. Tidak boleh melebihi 20 aksara</string>
+    <string name="strSuccessfullyReset">Penukaran kata laluan telah berjaya. Terima kasih.</string>
+    <string name="strAttachImageOrFile">Pilih dokumen atau gambar</string>
+    <string name="strChooseProject">Pilih projek</string>
+    <string name="strPicture">Gambar</string>
+    <string name="action_open_camera">Buka Kamera</string>
+    <string name="done">Selesai</string>
+    <string name="cannot_exceed_10">Tidak boleh melebihi 10 gambar dalam satu sesi. Terima kasih</string>
+
+    <!-- API -->
+    <!-- ***************   -->
+    <!-- local testing http://192.168.13.146/api/-->
+
+    <string name="apiRootMardi">http://myagro.myapp.my/api/</string>
+    <string name="apiLogin">login</string>
+    <string name="apiGetFeedGuest">%1$sguest</string>
+    <string name="apiGetFeedRegUser">%1$sannouncement/list</string>
+    <string name="apiGetProjectData">%1$sproject/viewbysector</string>
+    <string name="apiGetMessages">%1$sconversation</string>
+    <string name="apiGetMessageDetails">%1$sconversation/%2$d</string>
+    <string name="apiPostRespond">%1$sconversation/reply</string>
+    <string name="apiCreateMessage">%1$sconversation/init</string>
+    <string name="apiCreateAnnouncement">%1$sannouncement/seo</string>
+
+
+    <!--***************   -->
+
+
+</resources>

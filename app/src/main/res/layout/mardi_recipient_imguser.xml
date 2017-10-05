@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llRecipianUser"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="1dp"
+    android:weightSum="3">
+
+    <ImageView
+        android:id="@+id/imgUser"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="1dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/avatar"
+        android:visibility="visible" />
+
+    <!--<ImageView-->
+        <!--android:layout_width="35dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_margin="1dp"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:src="@drawable/add" />-->
+
+</LinearLayout>
+

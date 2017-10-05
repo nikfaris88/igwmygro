@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlmsgDetailsMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary" />
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:background="#eeeeee"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:id="@+id/activity_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_scrollFlags="scroll|enterAlways">
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:padding="8dp"
+                        android:text="Members"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <include layout="@layout/mardi_recipient" />
+
+
+                    <include layout="@layout/message_desc" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/reply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/linearLayout3"
+                    android:fontFamily="sans-serif"
+                    android:padding="8dp"
+                    android:text="Reply"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    app:layout_scrollFlags="scroll|enterAlways" />
+
+                <!--<com.marshalchen.ultimaterecyclerview.UltimateRecyclerView-->
+                <!--android:id="@+id/my_recycler_view"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/reply"-->
+                <!--app:recyclerviewClipToPadding="true"-->
+                <!--app:recyclerviewDefaultSwipeColor="@array/google_colors"-->
+                <!--app:recyclerviewEmptyView="@layout/empty_progressbar"-->
+                <!--app:recyclerviewFloatingActionView="@layout/floating_view"-->
+                <!--app:recyclerviewScrollbars="vertical" />-->
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/my_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/reply"
+                    android:orientation="vertical"
+                    android:scrollbars="none" />
+
+                <LinearLayout
+                    android:id="@+id/llNoResponds"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/txtNoRespond"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/strNotRespond"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <!--<include layout="@layout/message_reply" />-->
+
+                <!--<include layout="@layout/message_reply" />-->
+
+                <!--<include layout="@layout/message_new" />-->
+
+
+            </RelativeLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llNewMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="4dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+
+        <EditText
+            android:id="@+id/etMesej"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:hint="Mesej" />
+
+        <Button
+            android:id="@+id/btnHantar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:background="@drawable/btn_style"
+            android:text="Hantar"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+</RelativeLayout>
